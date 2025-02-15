@@ -14,3 +14,8 @@ cxx{*}: extension = cpp
 # The test target for cross-testing (running tests under Wine, etc).
 #
 test.target = $cxx.target
+
+# Whether to build without exception handling support.
+#
+config [bool] config.libimmer.no_exceptions ?= false
+

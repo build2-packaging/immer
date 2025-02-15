@@ -14,6 +14,15 @@ lib{immer}:
   cxx.export.libs = $intf_libs
 }
 
+if $config.libimmer.no_exceptions
+{
+  lib{quill}: cxx.export.poptions += -DIMMER_NO_EXCEPTIONS
+}
+else
+{
+  lib{quill}: cxx.export.poptions += -DIMMER_USE_EXCEPTIONS
+}
+
 # Install into the immer/ subdirectory of, say, /usr/include/
 # recreating subdirectories.
 #
