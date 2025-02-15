@@ -1,0 +1,3 @@
+import libs = libimmer%lib{immer}
+
+exe{driver}: {hxx ixx txx cxx}{**} $libs testscript{**}
