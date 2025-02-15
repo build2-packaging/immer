@@ -1,0 +1,10 @@
+--- operations.hpp.orig	2025-02-15 12:10:24.006369117 -0500
++++ operations.hpp	2025-02-15 12:11:25.004542638 -0500
+@@ -12,6 +12,7 @@
+ #include <memory>
+ #include <numeric>
+ #include <utility>
++#include <exception>
+ 
+ #include <immer/config.hpp>
+ #include <immer/detail/rbts/position.hpp>
