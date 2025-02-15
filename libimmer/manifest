@@ -1,0 +1,16 @@
+: 1
+name: libimmer
+version: 0.8.1-a.0.z
+type: lib,binless
+language: c++
+project: immer
+summary: Immutable and persistent data structures C++ library
+license: BSL-1.0 ; Boost Software License 1.0.
+package-description-file: PACKAGE-README.md
+url: https://sinusoid.es/immer
+doc-url: https://sinusoid.es/immer
+src-url: https://github.com/arximboldi/immer
+package-url: https://github.com/build2-packaging/immer
+package-email: packaging@build2.org ; Mailing list.
+depends: * build2 >= 0.17.0
+depends: * bpkg >= 0.17.0
