@@ -1,0 +1,8 @@
+: 1
+name: libimmer
+version: 0.8.1+2
+type: lib,binless
+language: c++
+project: immer
+summary: Immutable and persistent data structures C++ library
+license: BSL-1.0; Boost Software License 1.0.
