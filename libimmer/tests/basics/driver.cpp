@@ -1,5 +1,8 @@
 #include <immer/vector.hpp>
 
+#undef NDEBUG
+#include <cassert>
+
 int
 main ()
 {

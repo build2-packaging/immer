@@ -1,7 +1,4 @@
-intf_libs = # Interface dependencies.
-#import xxxx_libs += libhello%lib{hello}
-
-lib{immer}: {hxx ixx txx}{**} $intf_libs
+lib{immer}: {hxx ixx txx}{**}
 
 # Export options.
 #
@@ -16,11 +13,11 @@ lib{immer}:
 
 if $config.libimmer.no_exceptions
 {
-  lib{quill}: cxx.export.poptions += -DIMMER_NO_EXCEPTIONS
+  lib{immer}: cxx.export.poptions += -DIMMER_NO_EXCEPTIONS
 }
 else
 {
-  lib{quill}: cxx.export.poptions += -DIMMER_USE_EXCEPTIONS
+  lib{immer}: cxx.export.poptions += -DIMMER_USE_EXCEPTIONS
 }
 
 # Install into the immer/ subdirectory of, say, /usr/include/
